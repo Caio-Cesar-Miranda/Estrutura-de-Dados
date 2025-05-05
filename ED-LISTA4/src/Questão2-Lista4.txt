@@ -1,0 +1,247 @@
+Sequência 1: 44,98,78,1,67,30
+
+44
+
+2. Inserir 98 → sobe e troca com 44
+
+  98
+ /
+44
+
+3. Inserir 78 → não sobe (pai 98 > 78)
+
+   98
+  /  \
+44   78
+
+4. Inserir 1 → não sobe
+
+    98
+   /  \
+ 44   78
+ / \
+1   67
+
+
+5. Inserir 67 
+    98
+   /  \
+ 67   78
+ / \
+1  44
+
+6. Inserir 30 → não sobe
+
+     98
+   /    \
+ 78     67
+ / \    /
+1  44  30
+
+
+Sequência 2: 12,55,63,17,2,9
+
+12
+
+2. Inserir 55 → sobe e troca com o 12
+
+ 55
+ /
+12
+
+3. Inserir 63 → sobe e troca com o 55
+
+  63
+ /  \
+12   55
+
+
+4. Inserir 17 → sobe e troca com 12
+
+  63
+ /  \
+17   55
+/
+12
+
+5. Inserir 2 → não sobe
+
+ 63
+ /  \
+17   55
+/  \
+12  2
+
+6. Inserir 9 → não sobe
+
+    63
+  /    \
+17      55
+/  \    /
+12  2   9
+
+
+
+Sequência 3: 7, 95, 32, 44, 28, 13 
+
+7
+
+2. Inserir 95 → sobe e troca com 7
+
+ 95
+ /
+7
+
+3. Inserir 32 → não sobe
+
+ 95
+ / \
+7   32
+
+4. Inserir 44 → sobe e troca com o 7
+
+ 95
+ / \
+44  32
+/
+7
+
+5. Inserir 28 → não sobe 
+
+ 95
+ / \
+44  32
+/ \
+7  28
+
+6. Inserir 13 → não sobe
+
+   95
+ /    \
+44     32
+/ \    /
+7  28  13
+
+Sequência 4: 21, 41, 53, 64, 1, 90 
+
+21
+
+2. Inserir 41 → sobe e troca com o 21
+
+ 41
+ /
+21
+
+3. Inserir 53 → sobe e troca com o 41
+
+  53
+ /  \
+21  41
+
+4. Inserir 64 → sobe até o topo
+
+   64
+  /   \
+53    41
+/
+21
+
+5. Inserir 1 → não sobe
+
+   64
+  /   \
+53    41
+/  \
+21  1
+
+6. Inserir 90 → sobe até o topo
+
+    90
+  /    \
+ 53     64
+/  \    /
+21  1  41
+
+
+Sequência 5: 77, 19, 37, 27, 2, 99 
+
+77
+
+2. Inserir 19 → não sobe
+
+ 77 
+ /
+19
+
+3. Inserir 37 → não sobe 
+
+  77 
+ /  \
+19   37
+
+4. Inserir 27 → sobe e troca com o 19
+
+  77 
+ /  \
+27   37
+/
+19
+
+5. Inserir 2 → não sobe 
+
+   77
+  /   \
+ 27   37
+/  \
+19  2
+
+6. Inserir 99 → sobe até o topo
+
+    99 
+  /    \
+ 27     77
+/  \    /
+19  2  37
+
+
+Sequência 6: 13, 8, 29, 101, 44, 67 
+
+13
+
+2. Inserir 8 → não sobe
+
+ 13
+ /
+8
+
+3. Inserir 29 → sobe e troca com o 13
+
+  29
+ /  \
+8   13
+
+4. Inserir 101 → sobe até o topo
+
+  101
+ /   \
+29   13
+/
+8
+
+5. Inserir 44 → sobe e troca com o 29
+
+ 101
+ /   \
+44   13
+/ \
+8  29
+
+6. Inserir 67 → sobe e troca com o 13
+
+     101
+   /     \
+  44     67
+ /  \    /
+8  29   13
+
+

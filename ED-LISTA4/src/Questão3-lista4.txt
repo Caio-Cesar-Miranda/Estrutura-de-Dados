@@ -1,0 +1,466 @@
+QUESTÃO 3: Considerando as árvores para as sequencias da questão anterior. 
+Desenhe a árvore do heap para a remoção de cada dos elementos. Caso seja 
+necessária alguma troca, desenhe uma arvore do heap para cada umas trocas 
+realizadas naquela remoção. 
+
+Sequência 1: 98,78,67,1,44,30
+Sequência 2: 63,17,55,12,2,9
+Sequência 3: 95,44,32,7,28,13
+Sequência 4: 90,53,64,21,1,41
+Sequência 5: 99,27,77,19,2,37
+Sequência 6: 101,44,67,8,29,13
+
+Removendo o 98 e subindo o 30
+
+     30
+   /    \
+ 78     67
+ / \    
+1  44 
+
+
+Sobe o 78 e desce o 30 
+
+     78
+   /    \
+  30     67
+ / \    
+1  44
+
+Troca o 44 com o 30
+
+     78
+   /    \
+  44     67
+ / \    
+1  30
+
+
+Retira o 78 da raiz e sobe o 30
+
+     30
+   /    \
+  44     67
+ /     
+1 
+
+
+Troca o 30 com o 67
+
+     67
+   /    \
+  44     30
+ /     
+1 
+
+
+
+Sobe o 1 e retira o 67
+
+      1
+   /    \
+  44     30
+
+
+Troca o 1 com o 44
+
+     44
+   /    \
+  1     30
+
+
+Retira o 44 da raiz e põe o 1
+
+     1
+      \
+       30
+
+Troca o 1 com o 30 
+
+     30
+      \
+       1
+
+Retira o 30 da raiz e sobra o 1
+
+1
+
+Sequência 2: 63,17,55,12,2,9
+
+    63
+  /    \
+17      55
+/  \    /
+12  2   9
+
+Retira o 63 da raiz e coloca o 9
+
+    9
+  /    \
+17      55
+/  \    
+12  2  
+
+Troca o 9 com o 55
+
+     55
+   /    \
+  17     9
+/  \    
+12  2
+
+
+Remove o 55 da raiz e coloca o 2
+
+    2
+  /   \
+17     9
+/      
+12 
+
+Troca o 2 com o 17
+
+    17
+  /   \
+2      9
+/      
+12
+
+Troca o 2 com o 12
+
+    17
+  /   \
+ 12    9
+/      
+2
+
+Retira o 17 da raiz e coloca o 2
+
+    2
+  /   \
+ 12    9
+
+Troca o 2 com o 12
+
+    12
+  /   \
+ 2     9
+
+
+Retira o 12 da raiz e coloca o 2
+
+    2
+     \
+      9
+
+Troca o 2 com o 9
+
+    9
+     \
+      2
+
+Remove o 9 da raiz e coloca o 2
+
+	2
+
+Sequência 3: 95,44,32,7,28,13
+
+   95
+ /    \
+44     32
+/ \    /
+7  28  13
+
+
+Retira o 95 da raiz e coloca o 13
+
+   13
+ /    \
+44     32
+/ \    
+7  28 
+
+Troca o 13 com o 44
+
+   44
+ /    \
+13     32
+/ \    
+7  28
+
+
+Troca o 13 com o 28
+
+   44
+ /    \
+28     32
+/ \    
+7  13
+
+
+Tira o 44 da raiz e coloca o 13
+
+   13
+ /    \
+28     32
+/     
+7 
+
+Troca o 13 com o 32
+
+   32
+ /    \
+28     13
+/     
+7 
+
+Retira o 32 e coloca o 7
+
+   7
+ /    \
+28     13
+
+Troca o 7 com o 28
+
+   28
+ /    \
+7     13
+
+Retira o 28 da raiz e coloca o 7
+
+   7
+    \
+     13
+
+Troca o 13 com o 7
+   
+   13
+    \
+     7
+Retira o 13 e coloca o 7
+
+  	7
+
+
+Sequência 4: 90,53,64,21,1,41
+
+    90
+  /    \
+ 53     64
+/  \    /
+21  1  41
+
+
+Retira o 90 da raiz e coloca o 41
+
+    41
+  /    \
+ 53     64
+/  \    
+21  1  
+
+Troca o 41 com 64
+
+    64
+  /    \
+ 53     41
+/  \    
+21  1 
+
+Retira o 64 da raiz e coloca o 1
+
+    1
+  /    \
+ 53     41
+/      
+21  
+
+
+Troca o 1 com o 53
+    53
+  /    \
+ 1     41
+/      
+21 
+
+
+Troca o 1 com o 21
+
+   53
+  /    \
+ 21     41
+/      
+1 
+
+Retira o 53 da raiz e sobe o 1
+
+    1
+  /    \
+ 21     41
+
+Troca o 1 com o 41
+
+    41
+  /    \
+ 21     1
+
+Retira o 41 da raiz e coloca o 1
+
+    41
+  /    \
+ 21     1
+
+
+Retira o 41 da raiz e coloca o 1
+
+    1
+  /  
+ 21  
+
+
+Troca o 1 com o 21
+
+ 21
+ /
+1
+
+Retira o 21 e sobe o 1
+
+	1
+
+
+Sequência 5: 99,27,77,19,2,37
+ 
+    99 
+  /    \
+ 27     77
+/  \    /
+19  2  37
+
+Retira o 99 e coloca o 37
+
+    37 
+  /    \
+ 27     77
+/  \   
+19  2  
+
+Troca o 77 com o 37
+    
+    77 
+  /    \
+ 27     37
+/  \   
+19  2 
+
+
+Retira o 77 da raiz e coloca o 2
+
+    2 
+  /    \
+ 27     37
+/     
+19  
+
+Troca o 2 com o 37
+
+    37 
+  /    \
+ 27     2
+/     
+19  
+
+
+Retira o 37 da raiz e coloca o 19
+
+    19 
+  /    \
+ 27     2
+
+
+Troca o 19 com o 27
+    
+    27 
+  /    \
+ 19     2
+
+Retira o 27 da raiz e coloca o 2
+
+    2 
+  /  
+ 19  
+
+Troca o 2 com o 19 
+   19 
+  /  
+ 2
+
+Retira o 19 e coloca o 2
+	
+	2
+
+
+Sequência 6: 101,44,67,8,29,13
+
+     101
+   /     \
+  44     67
+ /  \    /
+8  29   13
+
+
+Retira o 101 da raiz e coloca o 13 
+
+     13
+   /     \
+  44     67
+ /  \  
+8  29 
+
+Troca o 13 com o 67 
+
+     67
+   /   \
+  44    13
+ /  \  
+8  29 
+
+Retira o 67 da raiz e coloca o 29
+
+    29
+   /   \
+  44    13
+ /   
+8
+
+Troca o 29 por 44
+
+    44
+   /   \
+  29    13
+ /   
+8
+
+Retira o 44 da raiz e coloca o 8
+  
+     8
+   /   \
+  29    13
+
+Troca o 8 pelo 29
+
+     29
+    /  \
+   8    13
+
+
+Retira o 29 da raiz e coloca o 13
+
+    13
+   / 
+  8 
+
+
+Retira o 13 e coloca o 8
+
+	8 
